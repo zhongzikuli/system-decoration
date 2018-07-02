@@ -1,0 +1,989 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN" "http://java.sun.com/dtd/web-jsptaglibrary_1_2.dtd">
+	<!-- 自定义 字典下拉框标签 -->
+<taglib>
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>2.0</jsp-version>
+	<short-name>slt</short-name><!-- 标签名称 -->
+	<uri>/slt</uri>
+	<display-name>" slt -- select "</display-name>
+
+	<!--根据身份证号获取地址、年龄、性别-->
+	<tag>
+		<name>idCard</name>
+		<tag-class>com.haoqi.common.tag.IdCardTag</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>idCard</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>type</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>defaultValue</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+
+	<!--订单状态类型-->
+	<tag>
+		<name>OrderStatus</name>
+		<tag-class>com.haoqi.common.tag.OrderStatusTag</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>showValue</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	<tag>
+		<name>WaitingFileStatus</name>
+		<tag-class>com.haoqi.common.tag.WaitingFileStatusTag</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>showValue</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	<!--评估状态类型-->
+	<tag>
+		<name>AssessStatusTag</name>
+		<tag-class>com.haoqi.common.tag.AssessStatusTag</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>key</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	<!--购车人类型-->
+	<tag>
+		<name>buyerType</name>
+		<tag-class>com.haoqi.common.tag.BuyerTypeTag</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>key</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	<!-- 使用以下标签进行键值翻译 -->
+	<tag>
+		<name>constant</name>
+		<tag-class>com.haoqi.common.tag.ConstantTag</tag-class><!-- 标签类 -->
+		<body-content>empty</body-content>
+		<attribute>
+			<name>code</name><!-- 传参 -->
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>key</name><!-- 传参 -->
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>value</name><!-- 返回 -->
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	<tag>
+		<name>user</name>
+		<tag-class>com.haoqi.common.tag.UserTag</tag-class><!-- 标签类 -->
+		<body-content>empty</body-content>
+		<attribute>
+			<name>userId</name><!-- 传参 -->
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>userName</name><!-- 返回 -->
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	<tag>
+		<name>role</name>
+		<tag-class>com.haoqi.common.tag.RoleTag</tag-class><!-- 标签类 -->
+		<body-content>empty</body-content>
+		<attribute>
+			<name>roleId</name><!-- 传参 -->
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>roleName</name><!-- 返回 -->
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	<tag>
+		<name>dict</name>
+		<tag-class>com.haoqi.common.tag.DictTag</tag-class><!-- 标签类 -->
+		<body-content>empty</body-content>
+		<attribute>
+			<name>classType</name><!-- 传参 -->
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>keyWorld</name><!-- 传参 -->
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>valueDesc</name><!-- 返回 -->
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<name>dictData</name>
+		<tag-class>com.haoqi.common.tag.DictTypeDataTag</tag-class><!-- 标签类 -->
+		<body-content>empty</body-content>
+		<attribute>
+			<name>type</name><!-- 传参 -->
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<name>format</name>
+		<tag-class>com.haoqi.common.tag.FormatTag</tag-class><!-- 标签类 -->
+		<body-content>empty</body-content>
+		<attribute>
+			<name>type</name><!-- 传参 -->
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>pattern</name><!-- 传参规则 -->
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>show</name><!-- 返回-->
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	<tag>
+		<name>formatMortgageDate</name>
+		<tag-class>com.haoqi.common.tag.FormatMortgageDateTag</tag-class><!-- 标签类 -->
+		<body-content>empty</body-content>
+		<attribute>
+			<name>type</name><!-- 传参 -->
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>compare</name><!-- 传参 -->
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>value</name><!-- 返回-->
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	
+	<!-- 数据字典select -->
+	<tag>
+		<name>select</name>
+		<tag-class>com.haoqi.common.tag.SelectTag</tag-class><!-- 标签类 -->
+		<body-content>empty</body-content>
+		<!-- 标签的属性 -->
+		<attribute>
+			<!-- 是否含 请选择 ，true，包含；false，不包含，默认包含请选择 -->
+			<name>defaultValue</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- 是否可以多选 ，multiple，多选；空，不多选，默认不多选 -->
+			<name>multiple</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<!-- 默认选项要显示的文字，如全部或全选择，若此参数为空，则默认为请选择 -->
+			<name>defaultKey</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<!-- 数据字典的code -->
+			<name>classType</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- 地区ID -->
+			<name>areaId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<!-- 数据字典默认选中的值 -->
+			<name>keyWorld</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- 数据字典显示值 -->
+			<name>valueDesc</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+
+		<!-- 表单验证属性_S -->
+		<attribute>
+			<!-- 验证出错提示属性 -->
+			<name>inputOnError</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- 验证类型属性 -->
+			<name>validType</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<!-- 表单验证属性_E -->
+		<attribute>
+			<!-- 数据字典 下拉框的 size 属性下拉框有多少个显示值 -->
+			<name>size</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- 数据字典 下拉框的 name属性下拉框有多少个显示值 -->
+			<name>name</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- 数据字典 下拉框的 id属性下拉框有多少个显示值 -->
+			<name>id</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- 数据字典的 disabled 属性 -->
+			<name>disabled</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- 数据字典下拉框的 class 属性-->
+			<name>classValue</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- 数据字典下拉框的 style 属性-->
+			<name>style</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- 数据字典下拉框的 onchange 事件-->
+			<name>onchange</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- readonly 属性-->
+			<name>readonly</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<!-- 必选 属性-->
+			<name>required</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<!-- disabledValue 不需要的字典值-->
+			<name>disabledValue</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<!-- showValue 下拉框内只显示的值-->
+			<name>showValue</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<!-- title 属性-->
+			<name>title</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>tip</name><!-- 表单验证 -->
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>obj</name><!-- 表单验证 -->
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>check</name><!-- 表单验证 -->
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>key</name><!-- 表单验证 -->
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<name>input</name>
+		<tag-class>com.haoqi.common.tag.InputTag</tag-class><!-- 标签类 -->
+		<body-content>empty</body-content>
+		<!-- 标签的属性 -->
+		<attribute>
+			<name>code</name><!-- code为数据字典和常量转译专用 -->
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>key</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<!-- type分别为user、role、org、dict、prod、constant -->
+		<attribute>
+			<name>type</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>value</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>id</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>name</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>clazz</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>style</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>title</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>readonly</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>tip</name><!-- 表单验证 -->
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>obj</name><!-- 表单验证 -->
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>check</name><!-- 表单验证 -->
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<!-- 订单状态select -->
+	<tag>
+		<name>OrderStatusSelect</name>
+		<tag-class>com.haoqi.common.tag.OrderStatusSelectTag</tag-class><!-- 标签类 -->
+		<body-content>empty</body-content>
+		<attribute>
+			<!-- 是否可以多选 ，multiple，多选；空，不多选，默认不多选 -->
+			<name>multiple</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<!-- 下拉框的 name属性下拉框有多少个显示值 -->
+			<name>name</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- 下拉框的 id属性下拉框有多少个显示值 -->
+			<name>id</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- disabled 属性 -->
+			<name>disabled</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- 下拉框的 class 属性-->
+			<name>classValue</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- 下拉框的 style 属性-->
+			<name>style</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- 下拉框的 onchange 事件-->
+			<name>onchange</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- showValue 下拉框内只显示的值-->
+			<name>showValue</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>tip</name><!-- 表单验证 -->
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>obj</name><!-- 表单验证 -->
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>check</name><!-- 表单验证 -->
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	<!-- 常量select -->
+	<tag>
+		<name>selectCons</name>
+		<tag-class>com.haoqi.common.tag.ConstantSelectTag</tag-class><!-- 标签类 -->
+		<body-content>empty</body-content>
+		<!-- 标签的属性 -->
+		<attribute>
+			<!-- 是否含 请选择 ，true，包含；false，不包含，默认包含请选择 -->
+			<name>defaultValue</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- 是否可以多选 ，multiple，多选；空，不多选，默认不多选 -->
+			<name>multiple</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<!-- 默认选项要显示的文字，如全部或全选择，若此参数为空，则默认为请选择 -->
+			<name>defaultKey</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<!-- 数据字典的code -->
+			<name>classType</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- 数据字典默认选中的值 -->
+			<name>keyWorld</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- 数据字典显示值 -->
+			<name>valueDesc</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- 验证类型属性 -->
+			<name>validType</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- 数据字典 下拉框的 name属性下拉框有多少个显示值 -->
+			<name>name</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- 数据字典 下拉框的 id属性下拉框有多少个显示值 -->
+			<name>id</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- 数据字典的 disabled 属性 -->
+			<name>disabled</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- 数据字典下拉框的 class 属性-->
+			<name>classValue</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- 数据字典下拉框的 style 属性-->
+			<name>style</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- 数据字典下拉框的 onchange 事件-->
+			<name>onchange</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- 必选 属性-->
+			<name>required</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<!-- disabledValue 不需要的字典值-->
+			<name>disabledValue</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<!-- showValue 下拉框内只显示的值-->
+			<name>showValue</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<!-- title 属性-->
+			<name>title</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>tip</name><!-- 表单验证 -->
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>obj</name><!-- 表单验证 -->
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>check</name><!-- 表单验证 -->
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	<!-- 用户select -->
+	<tag>
+		<name>selectUser</name>
+		<tag-class>com.haoqi.common.tag.UserSelectTag</tag-class><!-- 标签类 -->
+		<body-content>empty</body-content>
+		<!-- 标签的属性 -->
+		<attribute>
+			<!-- 是否含 请选择 ，true，包含；false，不包含，默认包含请选择 -->
+			<name>defaultValue</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- 是否可以多选 ，multiple，多选；空，不多选，默认不多选 -->
+			<name>multiple</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<!-- 默认选项要显示的文字，如全部或全选择，若此参数为空，则默认为请选择 -->
+			<name>defaultKey</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<!-- 用户默认选中的值 -->
+			<name>userId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- 用户显示值 -->
+			<name>userName</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+
+		<!-- 表单验证属性_S -->
+		<attribute>
+			<!-- 验证出错提示属性 -->
+			<name>inputOnError</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- 验证类型属性 -->
+			<name>validType</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<!-- 表单验证属性_E -->
+		<attribute>
+			<!-- 数据字典 下拉框的 name属性下拉框有多少个显示值 -->
+			<name>name</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- 数据字典 下拉框的 id属性下拉框有多少个显示值 -->
+			<name>id</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- 数据字典的 disabled 属性 -->
+			<name>disabled</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- 数据字典下拉框的 class 属性-->
+			<name>classValue</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- 数据字典下拉框的 style 属性-->
+			<name>style</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- 数据字典下拉框的 onchange 事件-->
+			<name>onchange</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- readonly 属性-->
+			<name>readonly</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<!-- 必选 属性-->
+			<name>required</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<!-- disabledValue 不需要的字典值-->
+			<name>disabledValue</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<!-- showValue 下拉框内只显示的值-->
+			<name>showValue</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<!-- title 属性-->
+			<name>title</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>tip</name><!-- 表单验证 -->
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>obj</name><!-- 表单验证 -->
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>check</name><!-- 表单验证 -->
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	
+	<!-- 组织select -->
+	<tag>
+		<name>selectOrg</name>
+		<tag-class>com.haoqi.common.tag.OrgSelectTag</tag-class><!-- 标签类 -->
+		<body-content>empty</body-content>
+		<!-- 标签的属性 -->
+		<attribute>
+			<!-- 是否含 请选择 ，true，包含；false，不包含，默认包含请选择 -->
+			<name>defaultValue</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- 是否可以多选 ，multiple，多选；空，不多选，默认不多选 -->
+			<name>multiple</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<!-- 默认选项要显示的文字，如全部或全选择，若此参数为空，则默认为请选择 -->
+			<name>defaultKey</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<!-- 组织显示值 -->
+			<name>orgName</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+
+		<!-- 表单验证属性_S -->
+		<attribute>
+			<!-- 验证出错提示属性 -->
+			<name>inputOnError</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- 验证类型属性 -->
+			<name>validType</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<!-- 表单验证属性_E -->
+		<attribute>
+			<!-- 数据字典 下拉框的 name属性下拉框有多少个显示值 -->
+			<name>name</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- 数据字典 下拉框的 id属性下拉框有多少个显示值 -->
+			<name>id</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- 数据字典的 disabled 属性 -->
+			<name>disabled</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- 数据字典下拉框的 class 属性-->
+			<name>classValue</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- 数据字典下拉框的 style 属性-->
+			<name>style</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- 数据字典下拉框的 onchange 事件-->
+			<name>onchange</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<!-- 表示该自定义标签的某属性的值可以直接指定或者通过动态计算指定 -->
+		</attribute>
+		<attribute>
+			<!-- readonly 属性-->
+			<name>readonly</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<!-- 必选 属性-->
+			<name>required</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<!-- disabledValue 不需要的字典值-->
+			<name>disabledValue</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<!-- showValue 下拉框内只显示的值-->
+			<name>showValue</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<!-- title 属性-->
+			<name>title</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>tip</name><!-- 表单验证 -->
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>obj</name><!-- 表单验证 -->
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>check</name><!-- 表单验证 -->
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<name>menu</name>
+		<tag-class> com.haoqi.web.tag.NavMenuTag</tag-class><!-- 标签类 -->
+		<body-content>empty</body-content>
+		<attribute>
+			<name>menus</name><!-- 传参 -->
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	
+</taglib>
+	<!--
+		翻译标签的使用——
+		页面中调用 <%@ taglib prefix="slt" uri="/WEB-INF/tld/sl.tld" %> 引用自定义标签
+		<slt:user userId="${item.userId}"/> 此处需填写 用户的ID，返回显示为用户名称
+		<slt:role roleId="${item.roleId}"/> 此处需填写 角色的ID，返回显示为角色名称
+		<slt:dict classType="mzlb" keyWorld="002001"/> 此处需填写 字典的代码和显示的值，返回显示为“汉族”
+		列表中翻译不在数据字典中的常量
+		<slt:constant key="0" code="enable_state"/>
+		同时需要在constant.properties定义相关的配置。
+		注意：配置一定要以constant.开头，JSP中，只需使用后端的代码及其数字即可
+	-->
+	<!-- 
+		一般使用key和type可以获取到用户、角色、产品、组织的名称信息
+		使用key、type和code，可以获取到数据字典和常量的名称信息
+		如：
+		<slt:input key="${sessionScope.userInfo.userid }" type="user"/>
+		<slt:input key="002005" type="dict" code="mzlb"/>
+		<slt:input key="1" type="constant" code="enable_state"/>
+		其他：
+		id、name、title、style与普通用法一样，clazz即为页面中input的class
+	 -->
+	<!-- 
+		slt:select标签的使用
+		<slt:select id="dict_mzlb" classType="mzlb" defaultValue="true" keyWorld="002006"/> 会默认选中 苗族
+		id="" 该select的ID
+		name="" 该select的name
+		defaultValue="" 是否包含请选择，true,包含；false,不包含
+		multiple="" 是否能够多选，true,能多选；false,不能多选【暂不支持多选】
+		showValue="001001,002002" 会只显示对应keyWorld的信息在select下拉列表中
+		disabledValue="001001,002002" 会不显示对应keyWorld的信息在select下拉列表中
+		readonly="readonly" 只读
+		disabled="disabled" 不可编辑
+		onchange="function" 绑定的onchange事件
+		style="" 自定义样式
+		classValue="" 自定义class
+	 -->

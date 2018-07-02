@@ -1,0 +1,194 @@
+.loading-overlay,
+.dialog-overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.1;
+    z-index: 100000;
+    filter: alpha(opacity=10);
+    display: none;
+}
+
+.dialog-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100001;
+    display: none;
+    background: #fff;
+    border: 1px solid #3c9adc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-family: Microsoft Yahei;
+    border-radius: 5px;
+}
+
+.dialog-container .dialog-body {
+    box-shadow: none;
+}
+
+.dialog-container .dialog-body .dialog-header {
+    height: 32px;
+    line-height: 32px;
+    color: #ffffff;
+    background: #3c9adc;
+}
+
+.dialog-container .dialog-body .dialog-header .dialog-title {
+    float: left;
+    padding-left: 10px;
+}
+
+.dialog-container .dialog-body .dialog-header .dialog-close {
+    float: right;
+    margin: 6px;
+    width: 20px;
+    height: 20px;
+    background: url(../../images/icon_close.png) no-repeat;
+    cursor: pointer;
+    background-size: 100%;
+}
+
+.dialog-container .dialog-body .dialog-move {
+    cursor: move;
+}
+
+.dialog-container .dialog-body .dialog-content {
+    text-align: center;
+}
+
+.dialog-container .dialog-body .dialog-content .ibox-content {
+    background-color: #fff;
+    color: inherit;
+    padding: 10px 5px 0;
+    -webkit-border-image: none;
+    -o-border-image: none;
+    border-image: none;
+    position: relative;
+    border: 1px solid #fff;
+    clear: both;
+}
+
+.dialog-container .dialog-body .dialog-content .ibox-content form .form-group [class^="col-xs-"] {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.dialog-container .dialog-body .dialog-content .ibox-content .dialog-manage {
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+
+.dialog-container .dialog-body .dialog-content .dialog-item .dialog-tips {
+    margin: 20px auto;
+}
+
+.dialog-container .dialog-body .dialog-content .dialog-item .dialog-tips .tips {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+}
+
+.dialog-container .dialog-body .dialog-content .role-allocation {
+    display: table;
+    margin: 20px auto 30px;
+    text-align: left;
+}
+
+.dialog-container .dialog-body .dialog-content .role-allocation .title {
+    font-weight: 600;
+}
+
+.dialog-container .dialog-body .dialog-content .role-allocation .role-content {
+    height: 186px;
+}
+
+.dialog-container .dialog-body .dialog-content .role-allocation .role-content select {
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.dialog-container .dialog-body .dialog-content .role-allocation .role-content select option {
+    cursor: pointer;
+}
+
+.dialog-container .dialog-body .dialog-content .role-allocation .role-left {
+    float: left;
+    width: 170px;
+    height: 210px;
+}
+
+.dialog-container .dialog-body .dialog-content .role-allocation .role-center {
+    float: left;
+    width: 60px;
+    height: 210px;
+}
+
+.dialog-container .dialog-body .dialog-content .role-allocation .role-center div {
+    margin-left: 8px;
+    width: 40px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #999;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.dialog-container .dialog-body .dialog-content .role-allocation .role-center div.add-all {
+    margin-top: 50px;
+}
+
+.dialog-container .dialog-body .dialog-content .role-allocation .role-right {
+    float: left;
+    width: 170px;
+    height: 210px;
+}
+
+.loading-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -40px;
+    z-index: 9000001;
+    display: none;
+}
+
+.loading-container .loading-img {
+    text-align: center;
+}
+
+.faild-msg,
+.success-msg {
+    min-width: 80px;
+    padding: 0 10px;
+    height: 50px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    z-index: 9000001;
+    background: rgba(92, 184, 92, 0.8);
+    border-radius: 5px;
+    display: none;
+}
+
+.faild-msg .msg-text,
+.success-msg .msg-text {
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.faild-msg {
+    background: rgba(217, 83, 79, 0.8);
+}

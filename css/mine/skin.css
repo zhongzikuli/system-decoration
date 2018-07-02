@@ -1,0 +1,1285 @@
+.nav_icon, .default_icon {
+    width: 15px;
+    height: 15px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+/*------------首页-----------------*/
+.nav li.active >a .nav_home,
+.nav li a.act .nav_home,
+.nav_home {
+    background-image: url(../../images/nav_home.png);
+}
+
+#wrapper.white .nav li.active > a .nav_home,
+#wrapper.white .nav li a.act .nav_home{
+    background-image: url(../../images/nav_homeAct.png);
+}
+/*------------用户-----------------*/
+.nav li.active >a .nav_user,
+.nav li a.act .nav_user,
+.nav_user {
+    background-image: url(../../images/nav_user.png);
+}
+
+#wrapper.white .nav li.active > a .nav_user,
+#wrapper.white .nav li a.act .nav_user{
+    background-image: url(../../images/nav_userAct.png);
+}
+/*------------汽车金融-----------------*/
+.nav li.active >a .nav_carCash,
+.nav li a.act .nav_carCash,
+.nav_carCash {
+    background-image: url(../../images/nav_carCash.png);
+}
+
+#wrapper.white .nav li.active > a .nav_carCash,
+#wrapper.white .nav li a.act .nav_carCash {
+    background-image: url(../../images/nav_carCashAct.png);
+}
+
+.nav li.active >a .nav_carId,
+.nav li a.act .nav_carId,
+.nav_carId {
+    background-image: url(../../images/nav_carId.png);
+}
+
+#wrapper.white .nav li.active > a .nav_carId,
+#wrapper.white .nav li a.act .nav_carId {
+    background-image: url(../../images/nav_carIdAct.png);
+}
+/*------------充值记录-----------------*/
+.nav li.active >a .nav_chargeRecode,
+.nav li a.act .nav_chargeRecode,
+.nav_chargeRecode {
+    background-image: url(../../images/nav_chargeRecode.png);
+}
+
+#wrapper.white .nav li.active > a .nav_chargeRecode,
+#wrapper.white .nav li a.act .nav_chargeRecode {
+    background-image: url(../../images/nav_chargeRecodeAct.png);
+}
+/*------------值集-----------------*/
+.nav li.active >a .nav_dataList,
+.nav li a.act .nav_dataList,
+.nav_dataList {
+    background-image: url(../../images/nav_dataList.png);
+}
+
+#wrapper.white .nav li.active > a .nav_dataList,
+#wrapper.white .nav li a.act .nav_dataList {
+    background-image: url(../../images/nav_dataListAct.png);
+}
+/*------------部门-----------------*/
+.nav li.active >a .nav_department,
+.nav li a.act .nav_department,
+.nav_department {
+    background-image: url(../../images/nav_department.png);
+}
+
+#wrapper.white .nav li.active > a .nav_department,
+#wrapper.white .nav li a.act .nav_department {
+    background-image: url(../../images/nav_departmentAct.png);
+}
+/*------------编辑-----------------*/
+.nav li.active >a .nav_edit,
+.nav li a.act .nav_edit,
+.nav_edit {
+    background-image: url(../../images/nav_edit.png);
+}
+
+#wrapper.white .nav li.active > a .nav_edit,
+#wrapper.white .nav li a.act .nav_edit {
+    background-image: url(../../images/nav_editAct.png);
+}
+/*------------刷新-----------------*/
+.nav li.active >a .nav_fresh,
+.nav li a.act .nav_fresh,
+.nav_fresh {
+    background-image: url(../../images/nav_fresh.png);
+}
+
+#wrapper.white .nav li.active > a .nav_fresh,
+#wrapper.white .nav li a.act .nav_fresh {
+    background-image: url(../../images/nav_freshAct.png);
+}
+
+.nav li.active >a .nav_houner,
+.nav li a.act .nav_houner,
+.nav_houner {
+    background-image: url(../../images/nav_houner.png);
+}
+
+#wrapper.white .nav li.active > a .nav_houner,
+#wrapper.white .nav li a.act .nav_houner {
+    background-image: url(../../images/nav_hounerAct.png);
+}
+/*------------消费记录-----------------*/
+.nav li.active >a .nav_payRecode,
+.nav li a.act .nav_payRecode,
+.nav_payRecode {
+    background-image: url(../../images/nav_payRecode.png);
+}
+
+#wrapper.white .nav li.active > a .nav_payRecode,
+#wrapper.white .nav li a.act .nav_payRecode {
+    background-image: url(../../images/nav_payRecodeAct.png);
+}
+.nav li.active >a .nav_recode,
+.nav li a.act .nav_recode,
+.nav_recode {
+    background-image: url(../../images/nav_recode.png);
+}
+
+#wrapper.white .nav li.active > a .nav_recode,
+#wrapper.white .nav li a.act .nav_recode {
+    background-image: url(../../images/nav_recodeAct.png);
+}
+/*------------权限管理-----------------*/
+.nav li.active >a .nav_rightManage,
+.nav li a.act .nav_rightManage,
+.nav_rightManage {
+    background-image: url(../../images/nav_rightManage.png);
+}
+
+#wrapper.white .nav li.active > a .nav_rightManage,
+#wrapper.white .nav li a.act .nav_rightManage {
+    background-image: url(../../images/nav_rightManageAct.png);
+}
+/*------------角色-----------------*/
+.nav li.active >a .nav_role,
+.nav li a.act .nav_role,
+.nav_role {
+    background-image: url(../../images/nav_role.png);
+}
+
+#wrapper.white .nav li.active > a .nav_role,
+#wrapper.white .nav li a.act .nav_role {
+    background-image: url(../../images/nav_roleAct.png)
+}
+/*------------设置-----------------*/
+.nav li.active >a .nav_setting,
+.nav li a.act .nav_setting,
+.nav_setting {
+    background-image: url(../../images/nav_setting.png);
+}
+
+#wrapper.white .nav li.active > a .nav_setting,
+#wrapper.white .nav li a.act .nav_setting {
+    background-image: url(../../images/nav_settingAct.png);
+}
+/*------------广告-----------------*/
+.nav li.active >a .nav_adv,
+.nav li a.act .nav_adv,
+.nav_adv {
+    background-image: url(../../images/nav_adv.png);
+}
+
+#wrapper.white .nav li.active > a .nav_adv,
+#wrapper.white .nav li a.act .nav_adv {
+    background-image: url(../../images/nav_advAct.png);
+}
+/*------------面签问题-----------------*/
+.nav li.active >a .nav_question,
+.nav li a.act .nav_question,
+.nav_question {
+    background-image: url(../../images/nav_question.png);
+}
+
+#wrapper.white .nav li.active > a .nav_question,
+#wrapper.white .nav li a.act .nav_question {
+    background-image: url(../../images/nav_questionAct.png);
+}
+/*------------面签-----------------*/
+.nav li.active >a .nav_sign,
+.nav li a.act .nav_sign,
+.nav_sign {
+    background-image: url(../../images/nav_sign.png);
+}
+
+#wrapper.white .nav li.active > a .nav_sign,
+#wrapper.white .nav li a.act .nav_sign {
+    background-image: url(../../images/nav_signAct.png);
+}
+/*------------面签管理-----------------*/
+.nav li.active >a .nav_signManage,
+.nav li a.act .nav_signManage,
+.nav_signManage {
+    background-image: url(../../images/nav_signManage.png);
+}
+
+#wrapper.white .nav li.active > a .nav_signManage,
+#wrapper.white .nav li a.act .nav_signManage {
+    background-image: url(../../images/nav_signManageAct.png);
+}
+/*------------app-----------------*/
+.nav li.active >a .nav_app,
+.nav li a.act .nav_app,
+.nav_app {
+    background-image: url(../../images/nav_app.png);
+}
+
+#wrapper.white .nav li.active > a .nav_app,
+#wrapper.white .nav li a.act .nav_app {
+    background-image: url(../../images/nav_appAct.png);
+}
+/*------------登录管理-----------------*/
+.nav li.active >a .nav_login,
+.nav li a.act .nav_login,
+.nav_login {
+    background-image: url(../../images/nav_login.png);
+}
+
+#wrapper.white .nav li.active > a .nav_login,
+#wrapper.white .nav li a.act .nav_login {
+    background-image: url(../../images/nav_loginAct.png);
+}
+
+.nav li.active >a .nav_signright,
+.nav li a.act .nav_signright,
+.nav_signright {
+    background-image: url(../../images/nav_signRight.png);
+}
+
+#wrapper.white .nav li.active > a .nav_signright,
+#wrapper.white .nav li a.act .nav_signright {
+    background-image: url(../../images/nav_signRightAct.png);
+}
+
+.nav li.active >a .nav_agreement,
+.nav li a.act .nav_agreement,
+.nav_agreement {
+    background-image: url(../../images/nav_agreement.png);
+}
+
+#wrapper.white .nav li.active > a .nav_agreement,
+#wrapper.white .nav li a.act .nav_agreement {
+    background-image: url(../../images/nav_agreementAct.png);
+}
+/*------------经销商-----------------*/
+.nav li.active >a .nav_agency,
+.nav li a.act .nav_agency,
+.nav_agency {
+    background-image: url(../../images/nav_agency.png);
+}
+
+#wrapper.white .nav li.active > a .nav_agency,
+#wrapper.white .nav li a.act .nav_agency {
+    background-image: url(../../images/nav_agencyAct.png);
+}
+/*------------模板----------------*/
+.nav li.active >a .nav_goodsManage,
+.nav li a.act .nav_goodsManage,
+.nav_goodsManage {
+    background-image: url(../../images/nav_goodsManage.png);
+}
+
+#wrapper.white .nav li.active > a .nav_goodsManage,
+#wrapper.white .nav li a.act .nav_goodsManage {
+    background-image: url(../../images/nav_goodsManageAct.png);
+}
+/*------------保险-----------------*/
+.nav li.active >a .nav_insurance,
+.nav li a.act .nav_insurance,
+.nav_insurance {
+    background-image: url(../../images/nav_insurance.png);
+}
+
+#wrapper.white .nav li.active > a .nav_insurance,
+#wrapper.white .nav li a.act .nav_insurance {
+    background-image: url(../../images/nav_insuranceAct.png);
+}
+/*------------银行利率-----------------*/
+.nav li.active >a .nav_bankRate,
+.nav li a.act .nav_bankRate,
+.nav_bankRate {
+    background-image: url(../../images/nav_bankRate.png);
+}
+
+#wrapper.white .nav li.active > a .nav_bankRate,
+#wrapper.white .nav li a.act .nav_bankRate {
+    background-image: url(../../images/nav_bankRateAct.png);
+}
+/*------------流程-----------------*/
+.nav li.active >a .nav_process,
+.nav li a.act .nav_process,
+.nav_process {
+    background-image: url(../../images/nav_process.png);
+}
+
+#wrapper.white .nav li.active > a .nav_process,
+#wrapper.white .nav li a.act .nav_process {
+    background-image: url(../../images/nav_processAct.png);
+}
+
+.nav li.active >a .nav_money,
+.nav li a.act .nav_money,
+.nav_money {
+    background-image: url(../../images/nav_money.png);
+}
+
+#wrapper.white .nav li.active > a .nav_money,
+#wrapper.white .nav li a.act .nav_money {
+    background-image: url(../../images/nav_moneyAct.png);
+}
+
+.nav li.active >a .nav_general,
+.nav li a.act .nav_general,
+.nav_general {
+    background-image: url(../../images/nav_general.png);
+}
+
+#wrapper.white .nav li.active > a .nav_general,
+#wrapper.white .nav li a.act .nav_general {
+    background-image: url(../../images/nav_generalAct.png);
+}
+
+.nav li.active >a .nav_business,
+.nav li a.act .nav_business,
+.nav_business {
+    background-image: url(../../images/nav_business.png);
+}
+
+#wrapper.white .nav li.active > a .nav_business,
+#wrapper.white .nav li a.act .nav_business {
+    background-image: url(../../images/nav_businessAct.png);
+}
+/*------------公告-----------------*/
+.nav li.active >a .nav_notic,
+.nav li a.act .nav_notic,
+.nav_notic {
+    background-image: url(../../images/nav_notic.png);
+}
+
+#wrapper.white .nav li.active > a .nav_notic,
+#wrapper.white .nav li a.act .nav_notic {
+    background-image: url(../../images/nav_noticAct.png);
+}
+/*------------银行-----------------*/
+.nav li.active >a .nav_bank,
+.nav li a.act .nav_bank,
+.nav_bank {
+    background-image: url(../../images/nav_bank.png);
+}
+
+#wrapper.white .nav li.active > a .nav_bank,
+#wrapper.white .nav li a.act .nav_bank {
+    background-image: url(../../images/nav_bankAct.png);
+}
+/*------------黑名单-----------------*/
+.nav li.active >a .nav_blacklist,
+.nav li a.act .nav_blacklist,
+.nav_blacklist {
+    background-image: url(../../images/nav_blacklist.png);
+}
+
+#wrapper.white .nav li.active > a .nav_blacklist,
+#wrapper.white .nav li a.act .nav_blacklist {
+    background-image: url(../../images/nav_blacklistAct.png);
+}
+/*------------征信审核-----------------*/
+.nav li.active >a .nav_creditCheck,
+.nav li a.act .nav_creditCheck,
+.nav_creditCheck {
+    background-image: url(../../images/nav_creditCheck.png);
+}
+
+#wrapper.white .nav li.active > a .nav_creditCheck,
+#wrapper.white .nav li a.act .nav_creditCheck {
+    background-image: url(../../images/nav_creditCheckAct.png);
+}
+/*------------保险管理-----------------*/
+.nav li.active >a .nav_insureManage,
+.nav li a.act .nav_insureManage,
+.nav_insureManage {
+    background-image: url(../../images/nav_insureManage.png);
+}
+
+#wrapper.white .nav li.active > a .nav_insureManage,
+#wrapper.white .nav li a.act .nav_insureManage {
+    background-image: url(../../images/nav_insureManagekAct.png);
+}
+/*------------保险产品-----------------*/
+.nav li.active >a .nav_insureGoods,
+.nav li a.act .nav_insureGoods,
+.nav_insureGoods {
+    background-image: url(../../images/nav_insureGoods.png);
+}
+
+#wrapper.white .nav li.active > a .nav_insureGoods,
+#wrapper.white .nav li a.act .nav_insureGoods {
+    background-image: url(../../images/nav_insureGoodskAct.png);
+}
+/*------------车辆信息审核-----------------*/
+.nav li.active >a .nav_carAuditing,
+.nav li a.act .nav_carAuditing,
+.nav_carAuditing {
+    background-image: url(../../images/nav_carAuditing.png);
+}
+
+#wrapper.white .nav li.active > a .nav_carAuditing,
+#wrapper.white .nav li a.act .nav_carAuditing {
+    background-image: url(../../images/nav_carAuditingAct.png);
+}
+/*------------垫款申请-----------------*/
+.nav li.active >a .nav_chargeApply,
+.nav li a.act .nav_chargeApply,
+.nav_chargeApply {
+    background-image: url(../../images/nav_chargeApply.png);
+}
+
+#wrapper.white .nav li.active > a .nav_chargeApply,
+#wrapper.white .nav li a.act .nav_chargeApply {
+    background-image: url(../../images/nav_chargeApplyAct.png);
+}
+/*------------excel合同-----------------*/
+.nav li.active >a .nav_excel,
+.nav li a.act .nav_excel,
+.nav_excel {
+    background-image: url(../../images/nav_excel.png);
+}
+
+#wrapper.white .nav li.active > a .nav_excel,
+#wrapper.white .nav li a.act .nav_excel {
+    background-image: url(../../images/nav_excelAct.png);
+}
+
+/*------------流程配置-----------------*/
+.nav li.active >a .nav_flowSet,
+.nav li a.act .nav_flowSet,
+.nav_flowSet {
+    background-image: url(../../images/nav_flowSet.png);
+}
+
+#wrapper.white .nav li.active > a .nav_flowSet,
+#wrapper.white .nav li a.act .nav_flowSet {
+    background-image: url(../../images/nav_flowSetlAct.png);
+}
+
+/*------------收到还款卡-----------------*/
+.nav li.active >a .nav_getCard,
+.nav li a.act .nav_getCard,
+.nav_getCard {
+    background-image: url(../../images/nav_getCard.png);
+}
+
+#wrapper.white .nav li.active > a .nav_getCard,
+#wrapper.white .nav li a.act .nav_getCard {
+    background-image: url(../../images/nav_getCardAct.png);
+}
+/*------------保险录入-----------------*/
+.nav li.active >a .nav_insureInput,
+.nav li a.act .nav_insureInput,
+.nav_insureInput {
+    background-image: url(../../images/nav_insureInput.png);
+}
+
+#wrapper.white .nav li.active > a .nav_insureInput,
+#wrapper.white .nav li a.act .nav_insureInput {
+    background-image: url(../../images/nav_insureInputAct.png);
+}
+/*------------订单附件-----------------*/
+.nav li.active >a .nav_orderAttachment,
+.nav li a.act .nav_orderAttachment,
+.nav_orderAttachment {
+    background-image: url(../../images/nav_orderAttachment.png);
+}
+
+#wrapper.white .nav li.active > a .nav_orderAttachment,
+#wrapper.white .nav li a.act .nav_orderAttachment {
+    background-image: url(../../images/nav_orderAttachmentAct.png);
+}
+
+/*------------订单录入-----------------*/
+.nav li.active >a .nav_orderInput,
+.nav li a.act .nav_orderInput,
+.nav_orderInput {
+    background-image: url(../../images/nav_orderInput.png);
+}
+
+#wrapper.white .nav li.active > a .nav_orderInput,
+#wrapper.white .nav li a.act .nav_orderInput {
+    background-image: url(../../images/nav_orderInputAct.png);
+}
+
+/*------------订单修改-----------------*/
+.nav li.active >a .nav_orderRevise,
+.nav li a.act .nav_orderRevise,
+.nav_orderRevise {
+    background-image: url(../../images/nav_orderRevise.png);
+}
+
+#wrapper.white .nav li.active > a .nav_orderRevise,
+#wrapper.white .nav li a.act .nav_orderRevise {
+    background-image: url(../../images/nav_orderReviseAct.png);
+}
+/*------------抵押登记审核-----------------*/
+.nav li.active >a .nav_pledge,
+.nav li a.act .nav_pledge,
+.nav_pledge {
+    background-image: url(../../images/nav_pledge.png);
+}
+
+#wrapper.white .nav li.active > a .nav_pledge,
+#wrapper.white .nav li a.act .nav_pledge {
+    background-image: url(../../images/nav_pledgeAct.png);
+}
+
+/*------------审核中心-----------------*/
+.nav li.active >a .nav_trialCenter,
+.nav li a.act .nav_trialCenter,
+.nav_trialCenter {
+    background-image: url(../../images/nav_trialCenter.png);
+}
+
+#wrapper.white .nav li.active > a .nav_trialCenter,
+#wrapper.white .nav li a.act .nav_trialCenter {
+    background-image: url(../../images/nav_trialCenterAct.png);
+}
+
+/*------------已审-----------------*/
+.nav li.active >a .nav_trialed,
+.nav li a.act .nav_trialed,
+.nav_trialed {
+    background-image: url(../../images/nav_trialed.png);
+}
+
+#wrapper.white .nav li.active > a .nav_trialed,
+#wrapper.white .nav li a.act .nav_trialed {
+    background-image: url(../../images/nav_trialedAct.png);
+}
+
+/*------------订单修改审核-----------------*/
+.nav li.active >a .nav_trialInput,
+.nav li a.act .nav_trialInput,
+.nav_trialInput {
+    background-image: url(../../images/nav_trialInput.png);
+}
+
+#wrapper.white .nav li.active > a .nav_trialInput,
+#wrapper.white .nav li a.act .nav_trialInput {
+    background-image: url(../../images/nav_trialInputAct.png);
+}
+
+/*------------上传其他附件-----------------*/
+.nav li.active >a .nav_uploaderAttach,
+.nav li a.act .nav_uploaderAttach,
+.nav_uploaderAttach {
+    background-image: url(../../images/nav_uploaderAttach.png);
+}
+
+#wrapper.white .nav li.active > a .nav_uploaderAttach,
+#wrapper.white .nav li a.act .nav_uploaderAttach {
+    background-image: url(../../images/nav_uploaderAttachAct.png);
+}
+/*------------上传抵押登记-----------------*/
+.nav li.active >a .nav_uploaderAuditing,
+.nav li a.act .nav_uploaderAuditing,
+.nav_uploaderAuditing {
+    background-image: url(../../images/nav_uploaderAuditing.png);
+}
+
+#wrapper.white .nav li.active > a .nav_uploaderAuditing,
+#wrapper.white .nav li a.act .nav_uploaderAuditing {
+    background-image: url(../../images/nav_uploaderAuditingAct.png);
+}
+
+/*------------上传面签-----------------*/
+.nav li.active >a .nav_uploaderSign,
+.nav li a.act .nav_uploaderSign,
+.nav_uploaderSign {
+    background-image: url(../../images/nav_uploaderSign.png);
+}
+
+#wrapper.white .nav li.active > a .nav_uploaderSign,
+#wrapper.white .nav li a.act .nav_uploaderSign {
+    background-image: url(../../images/nav_uploaderSignAct.png);
+}
+
+/*------------候补资料-----------------*/
+.nav li.active >a .nav_waitingFile,
+.nav li a.act .nav_waitingFile,
+.nav_waitingFile {
+    background-image: url(../../images/nav_waitingFile.png);
+}
+
+#wrapper.white .nav li.active > a .nav_waitingFile,
+#wrapper.white .nav li a.act .nav_waitingFile {
+    background-image: url(../../images/nav_waitingFileAct.png);
+}
+
+/*------------待审-----------------*/
+.nav li.active >a .nav_waitingTrial,
+.nav li a.act .nav_waitingTrial,
+.nav_waitingTrial {
+    background-image: url(../../images/nav_waitingTrial.png);
+}
+
+#wrapper.white .nav li.active > a .nav_waitingTrial,
+#wrapper.white .nav li a.act .nav_waitingTrial {
+    background-image: url(../../images/nav_waitingTrialAct.png);
+}
+/*------------待审-----------------*/
+.nav li.active >a .nav_waitingTrial,
+.nav li a.act .nav_waitingTrial,
+.nav_waitingTrial {
+    background-image: url(../../images/nav_waitingTrial.png);
+}
+
+#wrapper.white .nav li.active > a .nav_waitingTrial,
+#wrapper.white .nav li a.act .nav_waitingTrial {
+    background-image: url(../../images/nav_waitingTrialAct.png);
+}
+/*------------财务打款-----------------*/
+.nav li.active >a .nav_financeTransfer,
+.nav li a.act .nav_financeTransfer,
+.nav_financeTransfer {
+    background-image: url(../../images/nav_financeTransfer.png);
+}
+
+#wrapper.white .nav li.active > a .nav_financeTransfer,
+#wrapper.white .nav li a.act .nav_financeTransfer {
+    background-image: url(../../images/nav_financeTransferlAct.png);
+}
+/*------------房贷-----------------*/
+.nav li.active >a .nav_houseLoan,
+.nav li a.act .nav_houseLoan,
+.nav_houseLoan {
+    background-image: url(../../images/nav_houseLoan.png);
+}
+
+#wrapper.white .nav li.active > a .nav_houseLoan,
+#wrapper.white .nav li a.act .nav_houseLoan {
+    background-image: url(../../images/nav_houseLoanAct.png);
+}
+/*------------收支平衡-----------------*/
+.nav li.active >a .nav_moneyBalance,
+.nav li a.act .nav_moneyBalance,
+.nav_moneyBalance {
+    background-image: url(../../images/nav_moneyBalance.png);
+}
+
+#wrapper.white .nav li.active > a .nav_moneyBalance,
+#wrapper.white .nav li a.act .nav_moneyBalance {
+    background-image: url(../../images/nav_moneyBalanceAct.png);
+}
+/*------------操作按钮-----------------*/
+.nav li.active >a .nav_dealBtn,
+.nav li a.act .nav_dealBtn,
+.nav_dealBtn {
+    background-image: url(../../images/nav_dealBtn.png);
+}
+
+#wrapper.white .nav li.active > a .nav_dealBtn,
+#wrapper.white .nav li a.act .nav_dealBtn {
+    background-image: url(../../images/nav_dealBtnAct.png);
+}
+
+/*------------订单详情-----------------*/
+.nav li.active >a .nav_orderDetail,
+.nav li a.act .nav_orderDetail,
+.nav_orderDetail {
+    background-image: url(../../images/nav_orderDetail.png);
+}
+
+#wrapper.white .nav li.active > a .nav_orderDetail,
+#wrapper.white .nav li a.act .nav_orderDetail {
+    background-image: url(../../images/nav_orderDetailAct.png);
+}
+
+/*------------系统日志-----------------*/
+.nav li.active >a .nav_sysDaily,
+.nav li a.act .nav_sysDaily,
+.nav_sysDaily {
+    background-image: url(../../images/nav_sysDaily.png);
+}
+
+#wrapper.white .nav li.active > a .nav_sysDaily,
+#wrapper.white .nav li a.act .nav_sysDaily {
+    background-image: url(../../images/nav_sysDailyAct.png);
+}
+/*------------短信设置-----------------*/
+.nav li.active >a .nav_messageSet,
+.nav li a.act .nav_messageSet,
+.nav_messageSet {
+    background-image: url(../../images/nav_messageSet.png);
+}
+
+#wrapper.white .nav li.active > a .nav_messageSet,
+#wrapper.white .nav li a.act .nav_messageSet {
+    background-image: url(../../images/nav_messageSetAct.png);
+}
+/*------------二手车评估-----------------*/
+.nav li.active >a .nav_secCarEva,
+.nav li a.act .nav_secCarEva,
+.nav_secCarEva {
+    background-image: url(../../images/nav_secCarEva.png);
+}
+
+#wrapper.white .nav li.active > a .nav_secCarEva,
+#wrapper.white .nav li a.act .nav_secCarEva {
+    background-image: url(../../images/nav_secCarEvaAct.png);
+}
+/*------------新增二手车-----------------*/
+.nav li.active >a .nav_addSecCar,
+.nav li a.act .nav_addSecCar,
+.nav_addSecCar {
+    background-image: url(../../images/nav_addSecCar.png);
+}
+
+#wrapper.white .nav li.active > a .nav_addSecCar,
+#wrapper.white .nav li a.act .nav_addSecCar {
+    background-image: url(../../images/nav_addSecCarAct.png);
+}
+/*------------二手车评估-----------------*/
+.nav li.active >a .nav_secCarAss,
+.nav li a.act .nav_secCarAss,
+.nav_secCarAss {
+    background-image: url(../../images/nav_secCarAss.png);
+}
+
+#wrapper.white .nav li.active > a .nav_secCarAss,
+#wrapper.white .nav li a.act .nav_secCarAss {
+    background-image: url(../../images/nav_secCarAssAct.png);
+}
+/*------------费用审核-----------------*/
+.nav li.active >a .nav_costAudit,
+.nav li a.act .nav_costAudit,
+.nav_costAudit {
+    background-image: url(../../images/nav_costAudit.png);
+}
+
+#wrapper.white .nav li.active > a .nav_costAudit,
+#wrapper.white .nav li a.act .nav_costAudit {
+    background-image: url(../../images/nav_costAuditAct.png);
+}
+
+/*------------打款复核-----------------*/
+.nav li.active >a .nav_costReaudit,
+.nav li a.act .nav_costReaudit,
+.nav_costReaudit {
+    background-image: url(../../images/nav_costReaudit.png);
+}
+
+#wrapper.white .nav li.active > a .nav_costReaudit,
+#wrapper.white .nav li a.act .nav_costReaudit {
+    background-image: url(../../images/nav_costReauditAct.png);
+}
+
+/*------------资产保全-----------------*/
+.nav li.active >a .nav_assetSave,
+.nav li a.act .nav_assetSave,
+.nav_assetSave {
+    background-image: url(../../images/nav_assetSave.png);
+}
+
+#wrapper.white .nav li.active > a .nav_assetSave,
+#wrapper.white .nav li a.act .nav_assetSave {
+    background-image: url(../../images/nav_assetSaveAct.png);
+}
+/*------------控制台-----------------*/
+.nav li.active >a .nav_console,
+.nav li a.act .nav_console,
+.nav_console {
+    background-image: url(../../images/nav_console.png);
+}
+
+#wrapper.white .nav li.active > a .nav_console,
+#wrapper.white .nav li a.act .nav_console {
+    background-image: url(../../images/nav_consoleAct.png);
+}
+/*------------理赔-----------------*/
+.nav li.active >a .nav_claim,
+.nav li a.act .nav_claim,
+.nav_claim {
+    background-image: url(../../images/nav_claim.png);
+}
+
+#wrapper.white .nav li.active > a .nav_claim,
+#wrapper.white .nav li a.act .nav_claim {
+    background-image: url(../../images/nav_claimAct.png);
+}
+/*------------意见建议管理-----------------*/
+.nav li.active >a .nav_suggest,
+.nav li a.act .nav_suggest,
+.nav_suggest {
+    background-image: url(../../images/nav_suggest.png);
+}
+
+#wrapper.white .nav li.active > a .nav_suggest,
+#wrapper.white .nav li a.act .nav_suggest {
+    background-image: url(../../images/nav_suggestAct.png);
+}
+/*------------行业咨询-----------------*/
+.nav li.active >a .nav_trade,
+.nav li a.act .nav_trade,
+.nav_trade {
+    background-image: url(../../images/nav_trade.png);
+}
+
+#wrapper.white .nav li.active > a .nav_trade,
+#wrapper.white .nav li a.act .nav_trade {
+    background-image: url(../../images/nav_tradeAct.png);
+}
+/*------------行业视频-----------------*/
+.nav li.active >a .nav_tradeVid,
+.nav li a.act .nav_tradeVid,
+.nav_tradeVid {
+    background-image: url(../../images/nav_tradeVid.png);
+}
+
+#wrapper.white .nav li.active > a .nav_tradeVid,
+#wrapper.white .nav li a.act .nav_tradeVid {
+    background-image: url(../../images/nav_tradeVidAct.png);
+}
+/*------------诉讼管理-----------------*/
+.nav li.active >a .nav_lawsuit,
+.nav li a.act .nav_lawsuit,
+.nav_lawsuit {
+    background-image: url(../../images/nav_lawsuit.png);
+}
+
+#wrapper.white .nav li.active > a .nav_lawsuit,
+#wrapper.white .nav li a.act .nav_lawsuit {
+    background-image: url(../../images/nav_lawsuitAct.png);
+}
+/*------------保全管理-----------------*/
+.nav li.active >a .nav_maintain,
+.nav li a.act .nav_maintain,
+.nav_maintain {
+    background-image: url(../../images/nav_maintain.png);
+}
+
+#wrapper.white .nav li.active > a .nav_maintain,
+#wrapper.white .nav li a.act .nav_maintain {
+    background-image: url(../../images/nav_maintainAct.png);
+}
+/*------------拖车单位-----------------*/
+.nav li.active >a .nav_trailer,
+.nav li a.act .nav_trailer,
+.nav_trailer {
+    background-image: url(../../images/nav_trailer.png);
+}
+
+#wrapper.white .nav li.active > a .nav_trailer,
+#wrapper.white .nav li a.act .nav_trailer {
+    background-image: url(../../images/nav_trailerAct.png);
+}
+/*------------催缴作业-----------------*/
+.nav li.active >a .nav_call,
+.nav li a.act .nav_call,
+.nav_call {
+    background-image: url(../../images/nav_call.png);
+}
+
+#wrapper.white .nav li.active > a .nav_call,
+#wrapper.white .nav li a.act .nav_call {
+    background-image: url(../../images/nav_tradeVidAct.png);
+}
+/*------------报表结构管理-----------------*/
+.nav li.active >a .nav_structure,
+.nav li a.act .nav_structure,
+.nav_structure {
+    background-image: url(../../images/nav_structure.png);
+}
+
+#wrapper.white .nav li.active > a .nav_structure,
+#wrapper.white .nav li a.act .nav_structure {
+    background-image: url(../../images/nav_structureAct.png);
+}
+/*------------抵押情况明细表-----------------*/
+.nav li.active >a .nav_pledgeDetail,
+.nav li a.act .nav_pledgeDetail,
+.nav_pledgeDetail {
+    background-image: url(../../images/nav_pledgeDetail.png);
+}
+
+#wrapper.white .nav li.active > a .nav_pledgeDetail,
+#wrapper.white .nav li a.act .nav_pledgeDetail {
+    background-image: url(../../images/nav_pledgeDetailAct.png);
+}
+/*------------机动车证书统计报表-----------------*/
+.nav li.active >a .nav_carCertificate,
+.nav li a.act .nav_carCertificate,
+.nav_carCertificate {
+    background-image: url(../../images/nav_carCertificate.png);
+}
+
+#wrapper.white .nav li.active > a .nav_carCertificate,
+#wrapper.white .nav li a.act .nav_carCertificate {
+    background-image: url(../../images/nav_carCertificateAct.png);
+}
+/*------------送行明细表-----------------*/
+.nav li.active >a .nav_toBank,
+.nav li a.act .nav_toBank,
+.nav_toBank {
+    background-image: url(../../images/nav_toBank.png);
+}
+
+#wrapper.white .nav li.active > a .nav_toBank,
+#wrapper.white .nav li a.act .nav_toBank {
+    background-image: url(../../images/nav_toBankAct.png);
+}
+/*------------自动报表-----------------*/
+.nav li.active >a .nav_autoReport,
+.nav li a.act .nav_autoReport,
+.nav_autoReport {
+    background-image: url(../../images/nav_autoReport.png);
+}
+
+#wrapper.white .nav li.active > a .nav_autoReport,
+#wrapper.white .nav li a.act .nav_autoReport {
+    background-image: url(../../images/nav_autoReportAct.png);
+}
+/*------------app菜单目录-----------------*/
+.nav li.active >a .nav_appMenu,
+.nav li a.act .nav_appMenu,
+.nav_appMenu {
+    background-image: url(../../images/nav_appMenu.png);
+}
+
+#wrapper.white .nav li.active > a .nav_appMenu,
+#wrapper.white .nav li a.act .nav_appMenu {
+    background-image: url(../../images/nav_appMenuAct.png);
+}
+/*------------系统对接管理-----------------*/
+.nav li.active >a .nav_sysConManage,
+.nav li a.act .nav_sysConManage,
+.nav_sysConManage {
+    background-image: url(../../images/nav_sysConManage.png);
+}
+
+#wrapper.white .nav li.active > a .nav_sysConManage,
+#wrapper.white .nav li a.act .nav_sysConManage {
+    background-image: url(../../images/nav_sysConManageAct.png);
+}
+/*------------开卡申请管理-----------------*/
+.nav li.active >a .nav_applyCard,
+.nav li a.act .nav_applyCard,
+.nav_applyCard {
+    background-image: url(../../images/nav_applyCard.png);
+}
+
+#wrapper.white .nav li.active > a .nav_applyCard,
+#wrapper.white .nav li a.act .nav_applyCard {
+    background-image: url(../../images/nav_applyCardAct.png);
+}
+/*------------品质战报-----------------*/
+.nav li.active >a .nav_quality,
+.nav li a.act .nav_quality,
+.nav_quality {
+    background-image: url(../../images/nav_quality.png);
+}
+
+#wrapper.white .nav li.active > a .nav_quality,
+#wrapper.white .nav li a.act .nav_quality {
+    background-image: url(../../images/nav_qualityAct.png);
+}
+/*------------修改密码-----------------*/
+.nav_changePsd {
+    background-image: url(../../images/nav_changePsd.png);
+    margin-right: 5px;
+    vertical-align: text-top;
+}
+/*------------退出-----------------*/
+.nav_logout {
+    background-image: url(../../images/nav_logout.png);
+    margin-right: 5px;
+    vertical-align: text-top;
+}
+/*------------帮助中心-----------------*/
+.nav_help {
+    background-image: url(../../images/nav_help.png);
+    margin-right: 5px;
+    vertical-align: text-top;
+}
+
+#wrapper.white .nav_home {
+    background-image: url(../../images/nav_homeWhite.png);
+}
+#wrapper.white .nav_user {
+    background-image: url(../../images/nav_userWhite.png);
+}
+#wrapper.white .nav_carCash {
+    background-image: url(../../images/nav_carCashWhite.png);
+}
+#wrapper.white .nav_carId {
+    background-image: url(../../images/nav_carIdWhite.png);
+}
+#wrapper.white .nav_chargeRecode {
+    background-image: url(../../images/nav_chargeRecodeWhite.png);
+}
+#wrapper.white .nav_dataList {
+    background-image: url(../../images/nav_dataListWhite.png);
+}
+#wrapper.white .nav_department {
+    background-image: url(../../images/nav_departmentWhite.png);
+}
+#wrapper.white .nav_edit {
+    background-image: url(../../images/nav_editWhite.png);
+}
+#wrapper.white .nav_fresh {
+    background-image: url(../../images/nav_freshWhite.png);
+}
+#wrapper.white .nav_chargeRecode {
+    background-image: url(../../images/nav_chargeRecodeWhite.png);
+}
+#wrapper.white .nav_houner {
+    background-image: url(../../images/nav_hounerWhite.png);
+}
+#wrapper.white .nav_payRecode {
+    background-image: url(../../images/nav_payRecodeWhite.png);
+}
+#wrapper.white .nav_recode {
+    background-image: url(../../images/nav_recodeWhite.png);
+}
+#wrapper.white .nav_rightManage {
+    background-image: url(../../images/nav_rightManageWhite.png);
+}
+#wrapper.white .nav_goodsManage {
+    background-image: url(../../images/nav_goodsManageWhite.png);
+}
+#wrapper.white .nav_role {
+    background-image: url(../../images/nav_roleWhite.png);
+}
+#wrapper.white .nav_setting {
+    background-image: url(../../images/nav_settingWhite.png);
+}
+#wrapper.white .nav_adv {
+    background-image: url(../../images/nav_advWhite.png);
+}
+#wrapper.white  .nav_question {
+    background-image: url(../../images/nav_questionWhite.png);
+}
+#wrapper.white .nav_sign {
+    background-image: url(../../images/nav_signWhite.png);
+}
+#wrapper.white .nav_signManage {
+    background-image: url(../../images/nav_signManageWhite.png);
+}
+#wrapper.white .nav_app {
+    background-image: url(../../images/nav_appWhite.png);
+}
+#wrapper.white .nav_login {
+    background-image: url(../../images/nav_loginWhite.png);
+}
+#wrapper.white .nav_signright {
+    background-image: url(../../images/nav_signRightWhite.png);
+}
+#wrapper.white .nav_agreement {
+    background-image: url(../../images/nav_agreementWhite.png);
+}
+#wrapper.white .nav_agency {
+    background-image: url(../../images/nav_agencyWhite.png);
+}
+#wrapper.white .nav_insurance {
+    background-image: url(../../images/nav_insuranceWhite.png);
+}
+#wrapper.white .nav_bankRate {
+    background-image: url(../../images/nav_bankRateWhite.png);
+}
+#wrapper.white .nav_process {
+    background-image: url(../../images/nav_processWhite.png);
+}
+#wrapper.white .nav_money {
+    background-image: url(../../images/nav_moneyWhite.png);
+}
+#wrapper.white .nav_general {
+    background-image: url(../../images/nav_generalWhite.png);
+}
+#wrapper.white .nav_business {
+    background-image: url(../../images/nav_businessWhite.png);
+}
+#wrapper.white .nav_creditCheck {
+    background-image: url(../../images/nav_creditCheckWhite.png);
+}
+#wrapper.white .nav_blacklist {
+    background-image: url(../../images/nav_blacklistWhite.png);
+}
+#wrapper.white .nav_bank {
+    background-image: url(../../images/nav_bankWhite.png);
+}
+#wrapper.white .nav_notic {
+    background-image: url(../../images/nav_noticWhite.png);
+}
+#wrapper.white .nav_insureManage {
+    background-image: url(../../images/nav_insureManageWhite.png);
+}
+#wrapper.white .nav_insureGoods {
+    background-image: url(../../images/nav_insureGoodsWhite.png);
+}
+#wrapper.white .nav_carAuditing {
+    background-image: url(../../images/nav_carAuditingWhite.png);
+}
+#wrapper.white .nav_chargeApply {
+    background-image: url(../../images/nav_chargeApplyWhite.png);
+}
+#wrapper.white .nav_carAuditing {
+    background-image: url(../../images/nav_carAuditingWhite.png);
+}
+#wrapper.white .nav_excel {
+    background-image: url(../../images/nav_excelWhite.png);
+}
+#wrapper.white .nav_flowSet {
+    background-image: url(../../images/nav_flowSetWhite.png);
+}
+#wrapper.white .nav_getCard {
+    background-image: url(../../images/nav_getCardWhite.png);
+}
+#wrapper.white .nav_insureInput {
+    background-image: url(../../images/nav_insureInputWhite.png);
+}
+#wrapper.white .nav_orderAttachment {
+    background-image: url(../../images/nav_orderAttachmentWhite.png);
+}
+#wrapper.white .nav_orderInput {
+    background-image: url(../../images/nav_orderInputWhite.png);
+}
+#wrapper.white .nav_orderRevise {
+    background-image: url(../../images/nav_orderReviseWhite.png);
+}
+#wrapper.white .nav_pledge {
+    background-image: url(../../images/nav_pledgeWhite.png);
+}
+#wrapper.white .nav_trialCenter {
+    background-image: url(../../images/nav_trialCenterWhite.png);
+}
+#wrapper.white .nav_trialed {
+    background-image: url(../../images/nav_trialedWhite.png);
+}
+#wrapper.white .nav_trialInput {
+    background-image: url(../../images/nav_trialInputWhite.png);
+}
+#wrapper.white .nav_uploaderAttach {
+    background-image: url(../../images/nav_uploaderAttachWhite.png);
+}
+#wrapper.white .nav_uploaderAuditing {
+    background-image: url(../../images/nav_uploaderAuditingWhite.png);
+}
+#wrapper.white .nav_uploaderSign {
+    background-image: url(../../images/nav_uploaderSignWhite.png);
+}
+#wrapper.white .nav_waitingFile {
+    background-image: url(../../images/nav_waitingFileWhite.png);
+}
+#wrapper.white .nav_waitingTrial {
+    background-image: url(../../images/nav_waitingTrialWhite.png);
+}
+#wrapper.white .nav_financeTransfer {
+    background-image: url(../../images/nav_financeTransferWhite.png);
+}
+#wrapper.white .nav_houseLoan {
+    background-image: url(../../images/nav_houseLoanWhite.png);
+}
+#wrapper.white .nav_moneyBalance {
+    background-image: url(../../images/nav_moneyBalanceWhite.png);
+}
+#wrapper.white .nav_dealBtn {
+    background-image: url(../../images/nav_dealBtnWhite.png);
+}
+#wrapper.white .nav_orderDetail {
+    background-image: url(../../images/nav_orderDetailWhite.png);
+}
+#wrapper.white .nav_sysDaily {
+    background-image: url(../../images/nav_sysDailyWhite.png);
+}
+#wrapper.white .nav_messageSet {
+    background-image: url(../../images/nav_messageSetWhite.png);
+}
+#wrapper.white .nav_secCarEva {
+    background-image: url(../../images/nav_secCarEvaWhite.png);
+}
+#wrapper.white .nav_addSecCar {
+    background-image: url(../../images/nav_addSecCarWhite.png);
+}
+#wrapper.white .nav_secCarAss {
+    background-image: url(../../images/nav_secCarAssWhite.png);
+}
+#wrapper.white .nav_costAudit {
+    background-image: url(../../images/nav_costAuditWhite.png);
+}
+#wrapper.white .nav_costReaudit {
+    background-image: url(../../images/nav_costReauditWhite.png);
+}
+#wrapper.white .nav_assetSave {
+    background-image: url(../../images/nav_assetSaveWhite.png);
+}
+#wrapper.white .nav_console {
+    background-image: url(../../images/nav_consoleWhite.png);
+}
+#wrapper.white .nav_claim {
+    background-image: url(../../images/nav_claimWhite.png);
+}
+#wrapper.white .nav_suggest {
+    background-image: url(../../images/nav_suggestWhite.png);
+}
+#wrapper.white .nav_trade {
+    background-image: url(../../images/nav_nav_tradeWhite.png);
+}
+#wrapper.white .nav_tradeVid {
+    background-image: url(../../images/nav_tradeVidWhite.png);
+}
+#wrapper.white .nav_lawsuit {
+    background-image: url(../../images/nav_lawsuitWhite.png);
+}
+#wrapper.white .nav_maintain {
+    background-image: url(../../images/nav_maintainWhite.png);
+}
+#wrapper.white .nav_trailer {
+    background-image: url(../../images/nav_trailerWhite.png);
+}
+#wrapper.white .nav_call {
+    background-image: url(../../images/nav_callWhite.png);
+}
+#wrapper.white .nav_structure {
+    background-image: url(../../images/nav_structureWhite.png);
+}
+#wrapper.white .nav_pledgeDetail {
+    background-image: url(../../images/nav_pledgeDetailWhite.png);
+}
+#wrapper.white .nav_carCertificate {
+    background-image: url(../../images/nav_carCertificateWhite.png);
+}
+#wrapper.white .nav_toBank {
+    background-image: url(../../images/nav_toBankWhite.png);
+}
+#wrapper.white .nav_autoReport {
+    background-image: url(../../images/nav_autoReportWhite.png);
+}
+#wrapper.white .nav_appMenu {
+    background-image: url(../../images/nav_appMenuWhite.png);
+}
+#wrapper.white .nav_sysConManage {
+    background-image: url(../../images/nav_sysConManageWhite.png);
+}
+#wrapper.white .nav_applyCard {
+    background-image: url(../../images/nav_applyCardWhite.png);
+}
+#wrapper.white .nav_quality {
+    background-image: url(../../images/nav_qualityWhite.png);
+}
+/*----------白色皮肤----------*/
+#wrapper.white .slimScrollDiv > *{
+    background: #fff;
+}
+#wrapper.white .slimScrollDiv .nav li{
+    background: #fff;
+}
+#wrapper.white .slimScrollDiv .nav .navbar-header{
+    background: #eff2f3;
+}
+#wrapper.white .slimScrollDiv .nav li a{
+    color: #656565;
+}
+#wrapper.white .slimScrollDiv .nav li a.act{
+    background-color: #eff2f3;
+}
+#wrapper.white .slimScrollDiv .nav li.active > a,
+#wrapper.white .slimScrollDiv .nav li a.act{
+    color: #289bdd;
+}
+#wrapper.white .slimScrollDiv .nav li a:hover,
+#wrapper.white .slimScrollDiv .nav li a:focus,
+#wrapper.white .slimScrollDiv .nav li a.act{
+    background-color: #eff2f3;
+}
